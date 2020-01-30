@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ad_detail_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey10">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ad_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ad_title"
+                style="@style/BaseTextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ad_detail_title_margin_top"
+                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Flat in calle de Joaquin María Lopez" />
+
+            <TextView
+                android:id="@+id/ad_neighborhood"
+                style="@style/BaseTextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ad_detail_neighborhood_margin_top"
+                app:layout_constraintStart_toStartOf="@+id/ad_title"
+                app:layout_constraintTop_toBottomOf="@id/ad_title"
+                tools:text="Arguelles" />
+
+            <TextView
+                android:id="@+id/ad_rooms"
+                style="@style/BaseTextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/guideline_end"
+                app:layout_constraintTop_toTopOf="@id/ad_neighborhood"
+                tools:text="4 rooms" />
+
+            <TextView
+                android:id="@+id/ad_bathrooms"
+                style="@style/BaseTextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/guideline_end"
+                app:layout_constraintTop_toTopOf="@+id/ad_price"
+                tools:text="3 baños" />
+
+            <TextView
+                android:id="@+id/ad_price"
+                style="@style/BaseTextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ad_detail_price_margin_top"
+                app:layout_constraintStart_toStartOf="@+id/ad_title"
+                app:layout_constraintTop_toBottomOf="@id/ad_neighborhood"
+                tools:text="1370 €/month" />
+
+            <ImageView
+                android:id="@+id/ad_image"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ad_detail_image_height"
+                android:layout_marginTop="@dimen/ad_detail_image_margin_top"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ad_price" />
+
+            <TextView
+                android:id="@+id/ad_address"
+                style="@style/BaseTextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ad_detail_address_margin_top"
+                android:paddingBottom="@dimen/ad_detail_address_padding"
+                app:layout_constraintStart_toStartOf="@+id/ad_title"
+                app:layout_constraintTop_toBottomOf="@id/ad_image"
+                tools:text="Joaquin Maria Lopez 14, Madrid" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/ad_detail_guideline_size" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/ad_detail_guideline_size" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

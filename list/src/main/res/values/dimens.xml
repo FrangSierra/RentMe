@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ad_detail_title_margin_top">16dp</dimen>
+    <dimen name="ad_detail_neighborhood_margin_top">8dp</dimen>
+    <dimen name="ad_detail_price_margin_top">8dp</dimen>
+    <dimen name="ad_detail_image_height">240dp</dimen>
+    <dimen name="ad_detail_image_margin_top">16dp</dimen>
+    <dimen name="ad_detail_address_padding">16dp</dimen>
+    <dimen name="ad_detail_address_margin_top">16dp</dimen>
+    <dimen name="ad_detail_guideline_size">16dp</dimen>
+
+    <dimen name="ad_card_view_margin">16dp</dimen>
+    <dimen name="ad_card_view_image_height">200dp</dimen>
+    <dimen name="ad_card_view_title_margin">8dp</dimen>
+    <dimen name="ad_card_view_title_text_size">24sp</dimen>
+    <dimen name="ad_card_view_price_margin">8dp</dimen>
+    <dimen name="ad_card_view_price_text_size">18sp</dimen>
+    <dimen name="ad_card_view_favorite_padding">16dp</dimen>
+</resources>

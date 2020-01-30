@@ -16,7 +16,7 @@ object Addressable {
 
         object Ads : Activity() {
             override val className: String
-                get() = "$BASE_PACKAGE_NAME.list.ui.AdsActivity"
+                get() = "$BASE_PACKAGE_NAME.list.ui.detail.AdsActivity"
         }
     }
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTextTheme">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AdCardTheme.Title" parent="BaseTextTheme">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/ad_card_view_title_text_size</item>
+    </style>
+
+    <style name="AdCardTheme.Price" parent="BaseTextTheme">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/ad_card_view_price_text_size</item>
+    </style>
+
+</resources>

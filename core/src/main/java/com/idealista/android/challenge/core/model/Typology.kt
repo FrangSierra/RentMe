@@ -1,6 +1,6 @@
 package com.idealista.android.challenge.core.model
 
-import com.idealista.android.challenge.core.CoreAssembler
+import com.idealista.android.challenge.core.CoreModule
 import com.idealista.android.challenge.core.R
 
 sealed class Typology {
@@ -39,4 +39,4 @@ sealed class Typology {
     }
 }
 
-fun Typology.string() = if (this !is Typology.Unknown) CoreAssembler.stringsProvider.string(stringId()) else ""
+fun Typology.string() = if (this !is Typology.Unknown) CoreModule.stringsProvider.string(stringId()) else ""

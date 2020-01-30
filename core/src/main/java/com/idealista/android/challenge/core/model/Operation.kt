@@ -1,6 +1,6 @@
 package com.idealista.android.challenge.core.model
 
-import com.idealista.android.challenge.core.CoreAssembler
+import com.idealista.android.challenge.core.CoreModule
 import com.idealista.android.challenge.core.R
 
 sealed class Operation {
@@ -13,6 +13,7 @@ sealed class Operation {
             return when (operation) {
                 "rent" -> Rent
                 "sale" -> Sale
+                else -> Unknown
             }
         }
     }
@@ -26,4 +27,4 @@ sealed class Operation {
     }
 }
 
-fun Operation.string() = if (this !is Operation.Unknown) CoreAssembler.stringsProvider.string(stringId()) else ""
+fun Operation.string() = if (this !is Operation.Unknown) CoreModule.stringsProvider.string(stringId()) else ""

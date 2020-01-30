@@ -7,3 +7,7 @@ import com.idealista.android.challenge.list.data.ListRepository
 fun list(repository: ListRepository): () -> Either<CommonError, List> = {
     repository.list()
 }
+
+fun ad(adId: String, repository: ListRepository) : () -> Either<CommonError, Ad> = {
+    repository.ad(adId)
+}

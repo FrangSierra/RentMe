@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_error">Lo sentimos, hubo un error realizando su petición</string>
+    <string name="no_networks_error">Lo sentimos, no hay conexión a internet</string>
+    <string name="server_error">Ha ocurrido un error en el servidor, inténtelo de nuevo</string>
+    <string name="client_error">Ha ocurrido un error, inténtelo de nuevo</string>
+    <string name="forbidden_error">Acceso no permitido</string>
+    <string name="not_found_error">No se han encontrado anuncios</string>
+    <string name="canceled_error">Su petición se ha cancelado</string>
+</resources>

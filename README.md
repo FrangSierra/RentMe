@@ -1,42 +1,27 @@
-# idealista Android challenge
-idealista Android crew needs you! We need a fellow to face our everyday challenges: new features, problem fixes, UI design, performance, security, backwards compatibility, testing...
+# Rent me Android challenge
 
-This repository contains a project ready to work with, but we need your help to build the next amazing features that will bring it to the next level, are you ready to go?
+## Changes done in the project
 
-We love clean code and beautiful layouts, structured implementation and testable components. Does it sound good to you? This is your challenge!
+- Fixed the bugs found in the project.
+- Kept the state of the ads recycler view when device is rotated.
+- Used Kodein for dependency injection instead of the given Assemblers to unify the way everything is instanced.
+- Added a new activity to navigate and check the clicked ad.
+- Added the possibility to mark an ad as favorite.
+- Added error management and pull-to-refresh.
+- Added an example UI Test.
+- Added an example Unit Test.
 
-## Getting started
+## Known errors
 
-This repository contains an Android app that retrieves a list of ads.
+- Kodein instance is sometimes not injected properly on UI Tests. This should be fixed adding an override
+to the binding of `AdsPresenter` on a custom `TestRunner` through the `ChallengeApplication` instance (it should be accessible from List package).
 
-<p align="center">
-  <img src="./art/list.png">
-</p>
+## Next Steps
 
-This is a multi-module project which contains three different modules: ``app``, ``core`` and ``list``. Application entry point is ``ListActivity`` located at ``list`` module
-
-## Tasks 
-
-Your task is to **clone** this repository and take into consideration next steps
-
-###### Before start
-Damn it! It seems the project has some kind of errors...could you help us to fix them and get project running great again before start?
-
-###### New features to add
-
-1. Go to an ad detail from ads list.
-2. Favourite ads
-
-###### Some optional tasks to do (bonus):
-
-1. Some tests could be great idea
-2. Feel free to develop any new features or improvements
-
-###### Considerations
-1. Deliver production ready code.
-2. You can add any UX / UI improvements you consider
-
-###### Once you've finished
-1. Generate the application apk and place it into a distribution folder
-2. Notify by email to rrhh@idealista.com which branch of your repo you want our Android team analyze or send us the project folder (including the .git)
-3. Have a beer after the work done
+- Proguard
+- Add a disk persistence/cache to show data when phone is offline.
+- Use Moshi instead of Gson because it's  more friendly with Kotlin nullables.
+- Firebase Performance, Crashlytics and Analytics
+- With More time I would re-do the project with an architecture I feel more comfy with(https://github.com/bq/mini-kotlin)
+- Tablet UI
+- I would move to reactive pattern to communicate between layers. It would also help to sync different views when backend changes appear.

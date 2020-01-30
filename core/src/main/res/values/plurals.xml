@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="rooms_size_format">
+        <item quantity="one">%d habitación.</item>
+        <item quantity="other">%d habitaciones.</item>
+    </plurals>
+
+    <plurals name="bathrooms_size_format">
+        <item quantity="one">%d baño.</item>
+        <item quantity="other">%d baños.</item>
+    </plurals>
+</resources>
